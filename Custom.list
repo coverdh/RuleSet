@@ -1,24 +1,5 @@
-
 # > Custom Proxy
 DOMAIN-SUFFIX,dribbble.com
-
-
-# > Custom Direct
-DOMAIN-KEYWORD,alipay,no-resolve
-DOMAIN-KEYWORD,antfin,no-resolve
-DOMAIN-KEYWORD,alibaba,no-resolve
-DOMAIN-KEYWORD,wechat,no-resolve
-DOMAIN-KEYWORD,qq,no-resolve
-DOMAIN-KEYWORD,dingtalk,no-resolve
-DOMAIN-KEYWORD,taobao,no-resolve
-IP-CIDR,11.0.0.0/8,no-resolve
-IP-CIDR,30.0.0.0/8,no-resolve
-IP-CIDR,192.168.0.0/8,no-resolve
-IP-CIDR,10.0.0.0/8,no-resolve
-IP-CIDR,172.16.0.0/12,no-resolve
-DOMAIN-KEYWORD,symantec,no-resolve
-DOMAIN-KEYWORD,hz.ali,no-resolve
-
 
 # > TestFlight
 DOMAIN,testflight.apple.com
@@ -774,3 +755,19 @@ IP-CIDR,74.86.0.0/16,no-resolve
 IP-CIDR,75.126.0.0/16,no-resolve
 IP-CIDR,174.37.0.0/16,no-resolve
 IP-CIDR,208.43.0.0/16,no-resolve
+
+# > Custom Direct
+DOMAIN-KEYWORD,alipay,no-resolve
+DOMAIN-KEYWORD,antfin,no-resolve
+DOMAIN-KEYWORD,alibaba,no-resolve
+DOMAIN-KEYWORD,wechat,no-resolve
+DOMAIN-KEYWORD,qq,no-resolve
+DOMAIN-KEYWORD,dingtalk,no-resolve
+DOMAIN-KEYWORD,taobao,no-resolve
+IP-CIDR,11.0.0.0/8,no-resolve
+IP-CIDR,30.0.0.0/8,no-resolve
+IP-CIDR,192.168.0.0/8,no-resolve
+IP-CIDR,10.0.0.0/8,no-resolve
+IP-CIDR,172.16.0.0/12,no-resolve
+DOMAIN-KEYWORD,symantec,no-resolve
+DOMAIN-KEYWORD,hz.ali,no-resolve
