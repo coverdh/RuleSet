@@ -28,7 +28,7 @@ DOMAIN-SUFFIX,smartmailcloud.com,Proxy
 DOMAIN-KEYWORD,tesla,Proxy
 
 # > Zooba
-USER-AGENT,battleroyale*
+USER-AGENT,battleroyale*,Proxy
 
 # > Top blocked sites
 DOMAIN-SUFFIX,2o7.net,Proxy
