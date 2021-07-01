@@ -1,6 +1,6 @@
 # > Custom Proxy
 DOMAIN-SUFFIX,dribbble.com
-
+DOMAIN-KEYWORD,mendix.com
 
 # > TestFlight
 DOMAIN,testflight.apple.com
