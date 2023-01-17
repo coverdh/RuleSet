@@ -1,9 +1,1 @@
-- RULE-SET,Alibaba,DIRECT
-
-rule-providers:
-  Alibaba:
-    type: http
-    behavior: classical
-    url: 'https://raw.githubusercontent.com/coverdh/RuleSet/master/alibaba.yaml'
-    path: ./Rules/Alibaba
-    interval: 86400
+RULE-SET,https://raw.githubusercontent.com/coverdh/RuleSet/master/alibaba.list,DIRECT
