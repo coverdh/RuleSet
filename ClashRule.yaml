@@ -56,6 +56,7 @@ rules:
 - RULE-SET,PROXY,Proxy
 - RULE-SET,Domestic,Domestic
 - RULE-SET,Domestic IPs,Domestic
+- RULE-SET,Game,Proxy
 - RULE-SET,LAN,DIRECT
 - GEOIP,CN,Domestic
 - MATCH,Others
@@ -119,6 +120,7 @@ script:
             "PROXY": "Proxy",
             "Domestic": "Domestic",
             "Domestic IPs": "Domestic",
+            "Game":"Proxy",
             "LAN": "DIRECT"
           }
 
@@ -497,3 +499,9 @@ rule-providers:
     url: https://fastly.jsdelivr.net/gh/dler-io/Rules@main/Clash/Provider/LAN.yaml
     path: ./Rules/LAN
     interval: 86400
+  Game:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/coverdh/RuleSet/master/game.yaml
+    path: ./Rules/LAN
+    interval: 86400    
