@@ -54,9 +54,9 @@ rules:
 - RULE-SET,Google FCM,Google FCM
 - RULE-SET,Scholar,Scholar
 - RULE-SET,PROXY,Proxy
+- RULE-SET,Game,Proxy
 - RULE-SET,Domestic,Domestic
 - RULE-SET,Domestic IPs,Domestic
-- RULE-SET,Game,Proxy
 - RULE-SET,LAN,DIRECT
 - GEOIP,CN,Domestic
 - MATCH,Others
