@@ -490,7 +490,7 @@ rule-providers:
   Domestic IPs:
     type: http
     behavior: ipcidr
-    url: https://fastly.jsdelivr.net/gh/dler-io/Rules@main/Clash/Provider/Domestic%20IPs.yaml
+    url: https://raw.githubusercontent.com/coverdh/RuleSet/master/DomesticIPS.yaml
     path: ./Rules/Domestic_IPs
     interval: 86400
   LAN:
