@@ -505,4 +505,9 @@ rule-providers:
     url: https://fastly.jsdelivr.net/gh/dler-io/Rules@main/Clash/Provider/LAN.yaml
     path: ./Rules/LAN
     interval: 86400
-
+  Alibaba:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/coverdh/RuleSet/master/alibaba.yaml
+    path: ./Rules/Alibaba
+    interval: 86400    
