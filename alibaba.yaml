@@ -10,5 +10,6 @@ payload:
   - IP-CIDR,192.168.0.0/8
   - IP-CIDR,10.0.0.0/8
   - IP-CIDR,172.16.0.0/12
+  - DOMAIN-KEYWORD,aliyun.com
   - DOMAIN-KEYWORD,symantec
   - DOMAIN-KEYWORD,hz.ali
