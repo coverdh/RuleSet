@@ -1,8 +1,8 @@
-DOMAIN-SUIFFIX,alibaba-inc.com 
+DOMAIN-SUFFIX,alibaba-inc.com 
 DOMAIN-KEYWORD,alipay
-DOMAIN-SUIFFIX,antfin.com
+DOMAIN-SUFFIX,antfin.com
 DOMAIN-KEYWORD,alicdn
-DOMAIN-SUIFFIX,yuque.com
+DOMAIN-SUFFIX,yuque.com
 DOMAIN-KEYWORD,tbcdn
 IP-CIDR,11.0.0.0/8
 IP-CIDR,30.0.0.0/8
