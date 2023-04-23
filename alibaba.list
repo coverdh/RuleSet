@@ -11,5 +11,5 @@ IP-CIDR,10.0.0.0/8
 IP-CIDR,172.16.0.0/12
 DOMAIN-KEYWORD,symantec
 DOMAIN-KEYWORD,hz.ali
-DOMAIN-SUIFFIX,aliyun.com
-DOMAIN-SUIFFIX,aliyuncs.com
+DOMAIN-SUFFIX,aliyun.com
+DOMAIN-SUFFIX,aliyuncs.com
