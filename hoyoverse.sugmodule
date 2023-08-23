@@ -1,7 +1,6 @@
 #!name=Alinet
 #!desc=Network tunings for the intranet of Alibaba and Alipay.
 #!version=0.2.1
-
 [Rule]
 DOMAIN-KEYWORD,hoyoverse.com,Proxy
 DOMAIN-KEYWORD,mob.com,Proxy
