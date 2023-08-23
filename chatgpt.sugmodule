@@ -7,6 +7,7 @@
 
 [Rule]
 DOMAIN-SUFFIX,openai.com,Proxy
+DOMAIN-SUFFIX,sentry.io,Proxy
 
 # NOTE:
 # Add this line before the FINAL rule. That is recommended but cannot be done by this module due to limitation of Surge.
