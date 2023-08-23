@@ -1,6 +1,6 @@
 #!name=Alinet
 #!desc=Network tunings for the intranet of Alibaba and Alipay.
-#!version=0.2.3
+#!version=0.2.4
 
 [General]
 skip-proxy = %APPEND% 6.0.0.0/8, 30.0.0.0/8, 33.0.0.0/8, 100.64.0.0/10, *.ali.com, *.alipay.net, *.taobao.net, *.alibaba-inc.com, *.aliyun-inc.com, *.antgroup-inc.cn, *.antfin.com, *.alipay.com
@@ -11,6 +11,7 @@ encrypted-dns-server = https://223.5.5.5/dns-query
 *.ali.com = server:30.30.30.30
 *.alipay.net = server:30.30.30.30
 *.taobao.net = server:30.30.30.30
+*.aliyun.net = server:30.30.30.30
 
 [Rule]
 PROCESS-NAME,DingTalk,DIRECT
@@ -24,6 +25,7 @@ DOMAIN-SUFFIX, alibaba-inc.com, DIRECT
 DOMAIN-SUFFIX, antgroup-inc.cn, DIRECT
 DOMAIN-SUFFIX, aliyun-inc.com, DIRECT
 DOMAIN-SUFFIX, antfin.com, DIRECT
+DOMAIN-SUFFIX, aliyun.com, DIRECT
 
 # NOTE:
 # Add this line before the FINAL rule. That is recommended but cannot be done by this module due to limitation of Surge.
