@@ -1,6 +1,6 @@
 #!name=Chatgpt
 #!desc=Chatgpt
-#!version=0.2.2
+#!version=0.2.3
 
 [Host]
 *.openai.com = server:8.8.8.8
