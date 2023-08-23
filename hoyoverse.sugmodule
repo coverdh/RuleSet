@@ -1,5 +1,5 @@
 #!name=Hoyoverse
-#!desc=原神外服代理.
+#!desc=原神代理
 #!version=0.2.1
 [Host]
 *.hoyoverse.com = server:system
