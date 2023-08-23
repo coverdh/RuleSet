@@ -1,12 +1,14 @@
-#!name=Alinet
-#!desc=Network tunings for the intranet of Alibaba and Alipay.
+#!name=Hoyoverse
+#!desc=原神外服代理.
 #!version=0.2.1
+[Host]
+*.hoyoverse.com = server:system
+
 [Rule]
 DOMAIN-KEYWORD,hoyoverse.com,Proxy
 DOMAIN-KEYWORD,mob.com,Proxy
 DOMAIN-KEYWORD,app-measurement.com,Proxy
 DOMAIN-KEYWORD,overseauspider.yuanshen.com,Proxy
-DOMAIN-KEYWORD,openai.com,Proxy
 DEST-PORT,22102,Proxy
 DEST-PORT,22101,Proxy
 
