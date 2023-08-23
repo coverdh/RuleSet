@@ -1,6 +1,6 @@
 #!name=Chatgpt
 #!desc=Chatgpt
-#!version=0.2.3
+#!version=0.2.4
 
 [Host]
 *.openai.com = server:8.8.8.8
@@ -8,7 +8,7 @@
 [Rule]
 DOMAIN-SUFFIX,openai.com,Proxy
 DOMAIN-SUFFIX,sentry.io,Proxy
-
+DOMAIN-SUFFIX,statsigapi.net,Proxy
 # NOTE:
 # Add this line before the FINAL rule. That is recommended but cannot be done by this module due to limitation of Surge.
 # IP-ASN, 37963, DIRECT
