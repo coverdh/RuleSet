@@ -1,0 +1,13 @@
+#!name=Alinet
+#!desc=Network tunings for the intranet of Alibaba and Alipay.
+#!version=0.2.1
+
+[Host]
+*.openai.com = server:8.8.8.8
+
+[Rule]
+DOMAIN-SUFFIX,openai.com,Proxy
+
+# NOTE:
+# Add this line before the FINAL rule. That is recommended but cannot be done by this module due to limitation of Surge.
+# IP-ASN, 37963, DIRECT
