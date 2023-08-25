@@ -1,0 +1,6 @@
+#!name=atvPonte
+#!desc=atvPonte
+#!version=0.0.1
+
+[Rule]
+IP-CIDR,192.169.50.0/24,DEVICE:ATV
