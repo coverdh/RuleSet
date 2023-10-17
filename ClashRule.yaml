@@ -1,4 +1,5 @@
 rules:
+- RULE-SET,CN IPs,Domestic
 - RULE-SET,Game,Proxy
 - RULE-SET,Reject,AdBlock
 - RULE-SET,Special,DIRECT
