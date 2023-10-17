@@ -493,6 +493,12 @@ rule-providers:
     url: https://raw.githubusercontent.com/coverdh/RuleSet/master/DomesticIPS.yaml
     path: ./Rules/Domestic_IPs
     interval: 86400
+  CN IPs:
+    type: http
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
   Game:
     type: http
     behavior: classical
