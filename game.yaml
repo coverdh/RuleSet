@@ -1,8 +1,3 @@
 payload:
-  - DOMAIN-KEYWORD,hoyoverse.com
-  - DOMAIN-KEYWORD,mob.com
-  - DOMAIN-KEYWORD,app-measurement.com
-  - DOMAIN-KEYWORD,overseauspider.yuanshen.com
-  - DOMAIN-KEYWORD,openai.com
   - DST-PORT,22102
   - DST-PORT,22101
