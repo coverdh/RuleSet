@@ -1,4 +1,5 @@
 rules:
+- RULE-SET, OpenAI, OpenAI
 - RULE-SET,HoYoverse,Proxy
 - RULE-SET,CN IPs,Domestic
 - RULE-SET,Game,Proxy
@@ -524,4 +525,5 @@ rule-providers:
     behavior: classical
     url: https://raw.githubusercontent.com/coverdh/RuleSet/master/alibaba.yaml
     path: ./Rules/Alibaba
-    interval: 86400    
+    interval: 86400 
+  OpenAI: { type: http, behavior: classical, url: 'https://1a135efb-1e6c-4e3c-9d3d-a331bf6a6ee3.oss-cn-hangzhou.aliyuncs.com/Provider/OpenAI.yaml', path: ./Rules/OpenAI, interval: 86400 }
