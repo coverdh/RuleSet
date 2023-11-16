@@ -1,3 +1,4 @@
 payload:
   - DST-PORT,22102
   - DST-PORT,22101
+  - DOMAIN,osasiadispatch.yuanshen.com
