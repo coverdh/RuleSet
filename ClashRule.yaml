@@ -1,13 +1,13 @@
 rules:
 - RULE-SET, OpenAI, OpenAI
 # start of HoYoverse Rule
-- DOMAIN-SUFFIX,genshinimpact.com
-- DOMAIN-SUFFIX,honkaiimpact3.com
-- DOMAIN-SUFFIX,honkaistarrail.com
-- DOMAIN-SUFFIX,hoyo.link
-- DOMAIN-SUFFIX,hoyolab.com
-- DOMAIN-SUFFIX,hoyoverse.com
-- DOMAIN-SUFFIX,n0vadesktop.com
+- DOMAIN-SUFFIX,genshinimpact.com,Proxy
+- DOMAIN-SUFFIX,honkaiimpact3.com,Proxy
+- DOMAIN-SUFFIX,honkaistarrail.com,Proxy
+- DOMAIN-SUFFIX,hoyo.link,Proxy
+- DOMAIN-SUFFIX,hoyolab.com,Proxy
+- DOMAIN-SUFFIX,hoyoverse.com,Proxy
+- DOMAIN-SUFFIX,n0vadesktop.com,Proxy
 - DOMAIN,autopatchhk.yuanshen.com,Proxy
 - DOMAIN,osasiadispatch.yuanshen.com,Proxy 
 - DOMAIN,osuspider.yuanshen.com,Proxy 
