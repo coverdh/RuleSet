@@ -1,6 +1,11 @@
 rules:
 - RULE-SET, OpenAI, OpenAI
+# start of HoYoverse Rule
 - RULE-SET,HoYoverse,Proxy
+- AND,((DOMAIN,autopatchhk.yuanshen.com),(AND,((DST-PORT,443),(NETWORK,tcp)))),Proxy 
+- DOMAIN,osasiadispatch.yuanshen.com,Proxy 
+- DOMAIN,osuspider.yuanshen.com,Proxy 
+# end of HoYoverse Rule
 - RULE-SET,CN IPs,Domestic
 - RULE-SET,Game,Proxy
 - RULE-SET,Reject,AdBlock
@@ -147,6 +152,9 @@ script:
 
         if metadata["dst_ip"] != "":
             code = ctx.geoip(metadata["dst_ip"])
+            if metadata["network"] == "UDP" and code == "HK" and (port == 22101 or port == 22102):
+                ctx.log('[Script] Proxy HoYoverse Game Server')
+                return "Proxy"
             if code == "CN":
                 ctx.log('[Script] Geoip CN')
                 return "Domestic"
