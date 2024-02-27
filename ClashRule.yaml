@@ -2,7 +2,7 @@ rules:
 - RULE-SET, OpenAI, OpenAI
 # start of HoYoverse Rule
 - RULE-SET,HoYoverse,Proxy
-- AND,((DOMAIN,autopatchhk.yuanshen.com),(AND,((DST-PORT,443),(NETWORK,tcp)))),Proxy 
+- DOMAIN,autopatchhk.yuanshen.com,Proxy
 - DOMAIN,osasiadispatch.yuanshen.com,Proxy 
 - DOMAIN,osuspider.yuanshen.com,Proxy 
 # end of HoYoverse Rule
