@@ -21,7 +21,7 @@ proxy-providers:
     type: http
     path: ./profiles/proxies/wgetcloud.yaml
     url: 
-    interval: 3600
+    interval: 86400
  
 proxy-groups:
   - name: Proxy
