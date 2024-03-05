@@ -2,7 +2,6 @@ proxy-providers:
   wgetcloud:
     url: "URL TODO"
     interval: 3600
-    filter: 'example'
  
 proxy-groups:
   - name: Proxy
