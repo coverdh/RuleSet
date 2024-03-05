@@ -1,6 +1,26 @@
+port: 8888
+socks-port: 8889
+mixed-port: 8899
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: '127.0.0.1:6170'
+secret: dler
+experimental:
+    ignore-resolve-fail: true
+cfw-latency-url: 'http://cp.cloudflare.com/generate_204'
+cfw-latency-timeout: 3000
+cfw-latency-type: 1
+cfw-conn-break-strategy: true
+url-rewrite:
+    - '^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302'
+    - '^https?:\/\/(ditu|maps).google\.cn https://maps.google.com 302'
+
 proxy-providers:
   wgetcloud:
-    url: "URL TODO"
+    type: http
+    path: ./profiles/proxies/wgetcloud.yaml
+    url: 
     interval: 3600
  
 proxy-groups:
@@ -14,27 +34,41 @@ proxy-groups:
     interval: 300
     use:
       - wgetcloud 
-  - name: Asian TV
+  - name: Game
     type: select
     interval: 300
     use:
-      - wgetcloud   
+      - wgetcloud 
   - name: Asian TV
     type: select
     interval: 300
-    use:
-      - wgetcloud  
+    proxies:
+      - DIRECT
+      - Proxy
   - name: Telegram
     type: select
     interval: 300
     use:
-      - wgetcloud  
+      - wgetcloud 
   - name: PayPal
     type: select
     interval: 300
-    use:
-      - wgetcloud  
+    proxies:
+      - Proxy
+      - DIRECT
   - name: Microsoft
+    type: select
+    interval: 300
+    proxies:
+      - DIRECT
+      - Proxy
+  - name: Apple
+    type: select
+    interval: 300
+    proxies:
+      - DIRECT
+      - Proxy
+  - name: Netflix
     type: select
     interval: 300
     use:
@@ -42,8 +76,25 @@ proxy-groups:
   - name: Steam
     type: select
     interval: 300
-    use:
-      - wgetcloud
+    proxies:
+      - DIRECT
+      - Proxy
+  - name: Domestic
+    type: select
+    proxies:
+      - DIRECT
+      - Proxy
+  - name: AdBlock
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+      - Proxy
+  - name: Others
+    type: select
+    proxies:
+      - Proxy
+      - DIRECT    
 rules:
 - RULE-SET,OpenAI, OpenAI
 - RULE-SET,HoYoverse, Game
@@ -130,7 +181,7 @@ script:
             code = ctx.geoip(metadata["dst_ip"])
             if metadata["network"] == "UDP" and code == "HK" and (port == 22101 or port == 22102):
                 ctx.log('[Script] Proxy HoYoverse Game Server')
-                return "Proxy"
+                return "Game"
             if code == "CN":
                 ctx.log('[Script] Geoip CN')
                 return "Domestic"
