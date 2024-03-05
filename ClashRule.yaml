@@ -22,7 +22,10 @@ proxy-providers:
     path: ./profiles/proxies/wgetcloud.yaml
     url: 
     interval: 86400
- 
+    health-check:
+        enable: true
+        interval: 600
+        url: http://generate.wgetcloud.org/generate_204
 proxy-groups:
   - name: Proxy
     type: select
@@ -37,8 +40,9 @@ proxy-groups:
   - name: Game
     type: select
     interval: 300
-    use:
-      - wgetcloud 
+    proxies:
+      - DIRECT
+      - Proxy
   - name: Asian TV
     type: select
     interval: 300
@@ -48,8 +52,9 @@ proxy-groups:
   - name: Telegram
     type: select
     interval: 300
-    use:
-      - wgetcloud 
+    proxies:
+      - Proxy
+      - DIRECT
   - name: PayPal
     type: select
     interval: 300
@@ -71,8 +76,9 @@ proxy-groups:
   - name: Netflix
     type: select
     interval: 300
-    use:
-      - wgetcloud 
+    proxies:
+      - Proxy
+      - DIRECT
   - name: Steam
     type: select
     interval: 300
