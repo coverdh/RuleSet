@@ -1,0 +1,17 @@
+#!name=Hoyoverse
+#!desc=原神代理
+#!version=0.2.1
+[Host]
+*.hoyoverse.com = server:system
+
+[Rule]
+DOMAIN-KEYWORD,hoyoverse.com,Proxy
+DOMAIN-KEYWORD,mob.com,Proxy
+DOMAIN-KEYWORD,app-measurement.com,Proxy
+DOMAIN-KEYWORD,overseauspider.yuanshen.com,Proxy
+DEST-PORT,22102,Proxy
+DEST-PORT,22101,Proxy
+
+# NOTE:
+# Add this line before the FINAL rule. That is recommended but cannot be done by this module due to limitation of Surge.
+# IP-ASN, 37963, DIRECT
