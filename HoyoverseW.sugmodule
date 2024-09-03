@@ -5,12 +5,12 @@
 *.hoyoverse.com = server:system
 
 [Rule]
-DOMAIN-KEYWORD,hoyoverse.com,Proxy
-DOMAIN-KEYWORD,mob.com,Proxy
-DOMAIN-KEYWORD,app-measurement.com,Proxy
-DOMAIN-KEYWORD,overseauspider.yuanshen.com,Proxy
-DEST-PORT,22102,Proxy
-DEST-PORT,22101,Proxy
+DOMAIN-KEYWORD,hoyoverse.com,🚀 节点选择
+DOMAIN-KEYWORD,mob.com,🚀 节点选择
+DOMAIN-KEYWORD,app-measurement.com,🚀 节点选择
+DOMAIN-KEYWORD,overseauspider.yuanshen.com,🚀 节点选择
+DEST-PORT,22102,🚀 节点选择
+DEST-PORT,22101,🚀 节点选择
 
 # NOTE:
 # Add this line before the FINAL rule. That is recommended but cannot be done by this module due to limitation of Surge.
