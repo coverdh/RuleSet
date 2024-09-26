@@ -15,6 +15,8 @@ encrypted-dns-server = https://223.5.5.5/dns-query
 *.mmstat.com = server:30.30.30.30
 *.aliyun-inc.com = server:30.30.30.30
 *.alibaba-inc.com = server:30.30.30.30
+*.aliyuncs.com = server:30.30.30.30
+*.alicdn.com = server:30.30.30.30
 
 [Rule]
 PROCESS-NAME,DingTalk,DIRECT, no-resolve
