@@ -13,9 +13,12 @@ encrypted-dns-server = https://223.5.5.5/dns-query
 *.taobao.net = server:30.30.30.30
 *.aliyun.net = server:30.30.30.30
 *.mmstat.com = server:30.30.30.30
+*.aliyun-inc.com = server:30.30.30.30
+*.alibaba-inc.com = server:30.30.30.30
 
 [Rule]
-PROCESS-NAME,DingTalk,DIRECT
+PROCESS-NAME,DingTalk,DIRECT, no-resolve
+PROCESS-NAME,AliLangClient,DIRECT
 PROCESS-NAME,AliLangClient,DIRECT
 IP-ASN, 37963, DIRECT, no-resolve
 DOMAIN-SUFFIX, ali.com, DIRECT
