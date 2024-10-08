@@ -34,6 +34,7 @@ DOMAIN-SUFFIX, antfin.com, DIRECT
 DOMAIN-SUFFIX, aliyun.com, DIRECT
 DOMAIN-SUFFIX, mmstat.com,DIRECT
 DOMAIN-SUFFIX, aliyuncs.com,DIRECT
+PROCESS-NAME,CloudShell,DIRECT, no-resolve
 
 # NOTE:
 # Add this line before the FINAL rule. That is recommended but cannot be done by this module due to limitation of Surge.
