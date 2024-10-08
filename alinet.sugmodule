@@ -1,6 +1,6 @@
 #!name=Alinet
 #!desc=Network tunings for the intranet of Alibaba and Alipay.
-#!version=0.2.5
+#!version=0.2.6
 
 [General]
 always-real-ip = %APPEND% *.ali.com, *.alipay.net, *.taobao.net, *.alipay.com, *.alibaba-inc.com, *.aliyun-inc.com, *.antgroup-inc.cn, *.antfin.com, *.alipay.com, *.aliyun-inc.com, *.aliyun.com
