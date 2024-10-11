@@ -1,0 +1,8 @@
+#!name=Aliyun
+#!desc=Network tunings for the intranet of Alibaba and Alipay.
+#!version=0.2.6
+
+[Script]
+script1 = type=http-request,pattern=^https://g.alicdn.com/*,script-path=cdn.js,max-size=16384,debug=true
+script1 = type=http-request,pattern=^https://g.assets.daily.taobao.net/*,script-path=cdn.js,max-size=16384,debug=true
+script1 = type=http-request,pattern=^https://g.tbcdn.cn/*,script-path=cdn.js,max-size=16384,debug=true
