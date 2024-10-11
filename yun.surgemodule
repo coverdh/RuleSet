@@ -1,0 +1,42 @@
+#!name=Alinet
+#!desc=Network tunings for the intranet of Alibaba and Alipay.
+#!version=0.2.6
+
+[General]
+always-real-ip = %APPEND% *.ali.com, *.alipay.net, *.taobao.net, *.alipay.com, *.alibaba-inc.com, *.aliyun-inc.com, *.antgroup-inc.cn, *.antfin.com, *.alipay.com, *.aliyun-inc.com, *.aliyun.com
+skip-proxy = %APPEND% 6.0.0.0/8, 30.0.0.0/8, 33.0.0.0/8, 100.64.0.0/10, *.ali.com, *.alipay.net, *.taobao.net, *.test, *.alipay.com, *.alibaba-inc.com, *.aliyun-inc.com, *.antgroup-inc.cn, *.antfin.com, *.alipay.com, *.aliyun-inc.com, *.aliyun.com
+tun-excluded-routes = %APPEND% 6.0.0.0/8, 30.0.0.0/8, 33.0.0.0/8, 100.64.0.0/10, 121.40.0.0/13, 110.64.0.0/10
+encrypted-dns-server = https://223.5.5.5/dns-query
+
+[Host]
+*.ali.com = server:30.30.30.30
+*.alipay.net = server:30.30.30.30
+*.taobao.net = server:30.30.30.30
+*.aliyun.net = server:30.30.30.30
+*.mmstat.com = server:30.30.30.30
+*.aliyun-inc.com = server:30.30.30.30
+*.alibaba-inc.com = server:30.30.30.30
+*.aliyuncs.com = server:30.30.30.30
+*.alicdn.com = server:30.30.30.30
+
+[Rule]
+PROCESS-NAME,CloudShell,DIRECT, no-resolve
+PROCESS-NAME,DingTalk,DIRECT, no-resolve
+PROCESS-NAME,AliLangClient,DIRECT
+PROCESS-NAME,AliLangClient,DIRECT
+IP-ASN, 37963, DIRECT, no-resolve
+IP-CIDR,30.30.30.30/32,DIRECT, no-resolve
+DOMAIN-SUFFIX, ali.com, DIRECT
+DOMAIN-SUFFIX, alipay.net, DIRECT
+DOMAIN-SUFFIX, taobao.net, DIRECT
+DOMAIN-SUFFIX, alibaba-inc.com, DIRECT
+DOMAIN-SUFFIX, antgroup-inc.cn, DIRECT
+DOMAIN-SUFFIX, aliyun-inc.com, DIRECT
+DOMAIN-SUFFIX, antfin.com, DIRECT
+DOMAIN-SUFFIX, aliyun.com, DIRECT
+DOMAIN-SUFFIX, mmstat.com,DIRECT
+DOMAIN-SUFFIX, aliyuncs.com,DIRECT
+
+# NOTE:
+# Add this line before the FINAL rule. That is recommended but cannot be done by this module due to limitation of Surge.
+# IP-ASN, 37963, DIRECT
