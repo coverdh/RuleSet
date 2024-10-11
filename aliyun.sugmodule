@@ -1,6 +1,6 @@
 #!name=Aliyun
 #!desc=Aliyun Intranet Module.
-#!version=0.2.6
+#!version=0.0.1
 
 [Script]
 script1 = type=http-request,pattern=^https://g.alicdn.com/,script-path=https://raw.githubusercontent.com/coverdh/RuleSet/refs/heads/master/cdn.js,max-size=16384,debug=true
