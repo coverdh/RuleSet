@@ -1,5 +1,5 @@
 #!name=Aliyun
-#!desc=Network tunings for the intranet of Alibaba and Alipay.
+#!desc=Aliyun Intranet Module.
 #!version=0.2.6
 
 [Script]
