@@ -3,6 +3,6 @@
 #!version=0.2.6
 
 [Script]
-script1 = type=http-request,pattern=^https://g.alicdn.com/*,script-path=https://raw.githubusercontent.com/coverdh/RuleSet/refs/heads/master/cdn.js,max-size=16384,debug=true
-script1 = type=http-request,pattern=^https://g.assets.daily.taobao.net/*,script-path=https://raw.githubusercontent.com/coverdh/RuleSet/refs/heads/master/cdn.js,max-size=16384,debug=true
-script1 = type=http-request,pattern=^https://g.tbcdn.cn/*,script-path=https://raw.githubusercontent.com/coverdh/RuleSet/refs/heads/master/cdn.js,max-size=16384,debug=true
+script1 = type=http-request,pattern=^https://g.alicdn.com/,script-path=https://raw.githubusercontent.com/coverdh/RuleSet/refs/heads/master/cdn.js,max-size=16384,debug=true
+script1 = type=http-request,pattern=^https://g.assets.daily.taobao.net/,script-path=https://raw.githubusercontent.com/coverdh/RuleSet/refs/heads/master/cdn.js,max-size=16384,debug=true
+script1 = type=http-request,pattern=^https://g.tbcdn.cn/,script-path=https://raw.githubusercontent.com/coverdh/RuleSet/refs/heads/master/cdn.js,max-size=16384,debug=true
