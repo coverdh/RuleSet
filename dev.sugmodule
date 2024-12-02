@@ -1,0 +1,7 @@
+#!name=dev
+#!desc=dev
+#!version=0.0.1
+
+[Rule]
+DOMAIN-SUFFIX,gradle.org,Proxy
+DOMAIN-SUFFIX,apache.org,Proxy
