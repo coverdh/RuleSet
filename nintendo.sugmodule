@@ -1,2 +1,6 @@
+#!name=Nintendo
+#!desc=Switch 代理
+#!version=0.0.1
+
 [Rule]
 DOMAIN-KEYWORD,nintendo.net,🚀 节点选择
