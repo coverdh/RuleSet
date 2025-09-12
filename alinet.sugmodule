@@ -1,6 +1,6 @@
 #!name=Alinet
 #!desc=Network tunings for the intranet of Alibaba and Alipay.
-#!version=0.2.6
+#!version=0.2.7
 
 [General]
 always-real-ip = %APPEND% *.ali.com, *.alipay.net, *.taobao.net, *.alipay.com, *.alibaba-inc.com, *.aliyun-inc.com, *.antgroup-inc.cn, *.antfin.com, *.alipay.com, *.aliyun-inc.com, *.aliyun.com
@@ -27,6 +27,7 @@ PROCESS-NAME,AliLangClient,DIRECT
 IP-ASN, 37963, DIRECT, no-resolve
 IP-CIDR,30.30.30.30/32,DIRECT, no-resolve
 DOMAIN-SUFFIX, ali.com, DIRECT
+DOMAIN-SUFFIX, alicdn.com, DIRECT
 DOMAIN-SUFFIX, alipay.net, DIRECT
 DOMAIN-SUFFIX, taobao.net, DIRECT
 DOMAIN-SUFFIX, alibaba-inc.com, DIRECT
