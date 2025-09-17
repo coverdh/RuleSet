@@ -1,0 +1,22 @@
+#!name=Cover Custom Rules
+#!desc=Cover Private Custom Rules.
+#!version=0.0.1
+#!category=Custom
+
+[General]
+
+
+[Host]
+
+[Proxy Group]
+Proxy = select
+
+[Rule]
+PROCESS-NAME, 1Password, Proxy
+DOMAIN-KEYWORD, 1password, Proxy
+DOMAIN-SUFFIX, logi.com, Proxy
+DOMAIN-SUFFIX, cloudflare-dns.com, Proxy
+IP-CIDR 127.0.0.0/8,DIRECT, no-resolve
+
+# NOTE:
+# Add this line before the FINAL rule. That is recommended but cannot be done by this module due to limitation of Surge.
