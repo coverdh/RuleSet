@@ -25,8 +25,6 @@ PROCESS-NAME,CloudShell,DIRECT, no-resolve
 PROCESS-NAME,DingTalk,DIRECT, no-resolve
 PROCESS-NAME,AliLangClient,DIRECT
 PROCESS-NAME,AliLangClient,DIRECT
-IP-ASN, 37963, DIRECT, no-resolve
-IP-CIDR,30.30.30.30/32,DIRECT, no-resolve
 DOMAIN-SUFFIX, ali.com, DIRECT
 DOMAIN-SUFFIX, alicdn.com, DIRECT
 DOMAIN-SUFFIX, alipay.net, DIRECT
@@ -38,7 +36,7 @@ DOMAIN-SUFFIX, antfin.com, DIRECT
 DOMAIN-SUFFIX, aliyun.com, DIRECT
 DOMAIN-SUFFIX, mmstat.com,DIRECT
 DOMAIN-SUFFIX, aliyuncs.com,DIRECT
+IP-CIDR,30.30.30.30/32,DIRECT, no-resolve
 
 # NOTE:
 # Add this line before the FINAL rule. That is recommended but cannot be done by this module due to limitation of Surge.
-# IP-ASN, 37963, DIRECT
