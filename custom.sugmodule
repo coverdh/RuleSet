@@ -9,7 +9,7 @@
 [Host]
 
 [Proxy Group]
-Proxy = select
+Proxy = select, DIRECT, 🚀 节点选择
 
 [Rule]
 PROCESS-NAME, 1Password, Proxy
