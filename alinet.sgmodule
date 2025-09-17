@@ -37,5 +37,3 @@ DOMAIN-SUFFIX, mmstat.com,DIRECT
 DOMAIN-SUFFIX, aliyuncs.com,DIRECT
 IP-CIDR,30.30.30.30/32,DIRECT, no-resolve
 
-# NOTE:
-# Add this line before the FINAL rule. That is recommended but cannot be done by this module due to limitation of Surge.
