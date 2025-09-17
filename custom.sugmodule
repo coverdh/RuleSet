@@ -1,6 +1,6 @@
 #!name=Cover Custom Rules
 #!desc=Cover Private Custom Rules.
-#!version=0.0.2
+#!version=0.0.3
 #!category=Custom
 
 [General]
@@ -9,14 +9,14 @@
 [Host]
 
 [Proxy Group]
-Proxy = select, DIRECT, 🚀 节点选择
+自定义 = select, DIRECT, 🚀 节点选择
 
 [Rule]
-PROCESS-NAME, 1Password, Proxy
-DOMAIN-KEYWORD, 1password, Proxy
-DOMAIN-SUFFIX, logi.com, Proxy
-DOMAIN-SUFFIX, cloudflare-dns.com, Proxy
-DOMAIN-SUFFIX,prodregistryv2.org, Proxy
+PROCESS-NAME, 1Password, 自定义
+DOMAIN-KEYWORD, 1password, 自定义
+DOMAIN-SUFFIX, logi.com, 自定义
+DOMAIN-SUFFIX, cloudflare-dns.com, 自定义
+DOMAIN-SUFFIX,prodregistryv2.org, 自定义
 IP-CIDR 127.0.0.0/8,DIRECT, no-resolve
 
 # NOTE:
