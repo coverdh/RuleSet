@@ -1,6 +1,6 @@
 #!name=Cover Custom Rules
 #!desc=Cover Private Custom Rules.
-#!version=0.0.3
+#!version=0.0.4
 #!category=Custom
 
 
@@ -11,7 +11,7 @@ DOMAIN-KEYWORD, 1password, 🔐 自有天地
 DOMAIN-SUFFIX, logi.com, 🔐 自有天地
 DOMAIN-SUFFIX, cloudflare-dns.com, 🔐 自有天地
 DOMAIN-SUFFIX,prodregistryv2.org, 🔐 自有天地
-IP-CIDR 127.0.0.0/8,DIRECT, no-resolve
+IP-CIDR, 127.0.0.0/8,DIRECT, no-resolve
 
 # NOTE:
 # Add this line before the FINAL rule. That is recommended but cannot be done by this module due to limitation of Surge.
